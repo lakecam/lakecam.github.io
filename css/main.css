@@ -1,0 +1,99 @@
+@import url("satoshi.css");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+body > * {
+  margin: 0;
+}
+
+/* #region -> Fonts */
+
+h1 {
+  font-family: satoshi-bold;
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-family: satoshi-bold;
+  font-size: 2.25rem;
+}
+
+/* #endregion */
+
+/* #region -> Spacing */
+
+:root {
+  --b8x1: 0.5rem;
+  --b8x2: 1rem;
+  --b8x3: 1.5rem;
+  --b8x4: 2rem;
+  --b8x5: 2.5rem;
+  --b8x6: 3rem;
+  --b8x7: 3.5rem;
+  --b8x8: 4rem;
+  --b8x9: 4.5rem;
+  --b8x10: 5rem;
+  --b8x11: 5.5rem;
+  --b8x12: 6rem;
+  --b8x13: 6.5rem;
+  --b8x14: 7rem;
+}
+
+/* #endregion */
+
+/* #region -> Colours */
+
+/** hues **/
+:root {
+  --yellow-100: #fcf8e3;
+  --yellow-200: #ffd91a;
+  --yellow-300: #b29b24;
+
+  --orange-100: #fcefe3;
+  --orange-200: #f28218;
+  --orange-300: #99520f;
+
+  --green-100: #e3fcee;
+  --green-200: #17e56d;
+  --green-300: #0f9948;
+
+  --turqoise-100: #e3fcfa;
+  --turqoise-200: #16d9c9;
+  --turqoise-300: #008c80;
+
+  --blue-100: #e3f6fc;
+  --blue-200: #17b1e5;
+  --blue-300: #007399;
+
+  --purple-100: #ece3fc;
+  --purple-200: #5c17e5;
+  --purple-300: #4a0099;
+
+  --pink-100: #fce3f8;
+  --pink-200: #e517c3;
+  --pink-300: #99007f;
+
+  --red-100: #fce3e7;
+  --red-200: #e51739;
+  --red-300: #990019;
+}
+
+/** greys **/
+:root {
+  --grey-0: #ffffff;
+  --grey-100: #edf2f2;
+  --grey-200: #d4d9d9;
+  --grey-300: #bbbfbf;
+  --grey-400: #a1a6a6;
+  --grey-500: #848c8b;
+  --grey-600: #6a7372;
+  --grey-700: #4f5958;
+  --grey-800: #37403f;
+  --grey-900: #202626;
+  --grey-1000: #0a0d0d;
+}
+
+/* #endregion */
