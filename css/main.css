@@ -161,6 +161,10 @@ a {
   padding-bottom: var(--b8x7);
 }
 
+@media (min-width: 30em) and (max-width: 700px) .p-card {
+  padding: 2rem;
+}
+
 .divider {
   border-color: var(--grey-200);
   border-style: solid;
@@ -238,8 +242,9 @@ a {
     button {
       display: inline-flex;
       flex-direction: row;
-      flex-grow: 0;
-      flex-shrink: initial;
+      max-width: 300px;
+      justify-content: center;
+      align-items: center;
     }
   }
 
