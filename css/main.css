@@ -529,4 +529,26 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+
+  align-items: start;
+  gap: 3rem;
+}
+
+.website-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  justify-items: stretch;
+}
+
+.p-0 {
+  padding: 0;
 }
