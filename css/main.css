@@ -506,6 +506,10 @@ nav {
 .title-above {
 }
 
+.about-container {
+  min-height: 89vh;
+}
+
 section {
   padding-top: var(--b8x10);
   padding-bottom: var(--b8x10);
