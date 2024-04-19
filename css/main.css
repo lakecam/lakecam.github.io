@@ -49,6 +49,7 @@ h4 {
 p {
   font-family: satoshi-regular;
   color: var(--grey-800);
+  line-height: 160%;
 }
 
 /* #endregion */
@@ -153,12 +154,53 @@ a {
   row-gap: var(--b8x10);
 }
 
+.mw-sm {
+  max-width: 800px;
+  margin: auto;
+}
+
 .mw-pg {
   max-width: 60%;
   display: flex;
   flex-direction: column;
   row-gap: var(--b8x3);
   padding-bottom: var(--b8x7);
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.teal {
+  color: teal;
+}
+
+.light-grey {
+  color: var(--grey-400);
+}
+
+.subtle-grey {
+  color: var(--grey-300);
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.bold {
+  font-family: satoshi-bold;
+}
+
+.medium {
+  font-family: satoshi-medium;
 }
 
 @media (min-width: 30em) and (max-width: 700px) project-card {
@@ -169,6 +211,23 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.row-nsp {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+}
+
+.align-start {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .divider {
@@ -197,6 +256,23 @@ a {
   color: var(--red-200);
 }
 
+/* .hl-teal {
+  background-color: var(--turqoise-100);
+  color: var(--turqoise-300);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+} */
+
+.hl {
+  background-color: var(--grey-100);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.pd-l-half {
+  padding: ;
+}
+
 .txt-ora {
   color: var(--orange-200);
   font-family: satoshi-bold;
@@ -208,6 +284,21 @@ a {
 }
 
 /*--- Component-specific ---*/
+
+.job-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resume {
+  padding: 3rem;
+  background-color: var(--grey-0);
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: var(--b8x2);
+  border-color: var(--grey-200);
+}
 
 .header {
   display: flex;
@@ -286,12 +377,13 @@ footer {
     }
 
     button {
-      display: inline-flex;
+      display: flex;
       flex-direction: row;
       max-width: 250px;
       justify-content: center;
+      justify-items: start;
 
-      align-items: center;
+      align-items: start;
       margin-left: var(--b8x4);
       color: var(--pink-200);
       background-color: var(--grey-0);
@@ -338,8 +430,11 @@ nav {
     border-radius: var(--b8x12);
   }
 
-  a {
+  li:not(.active-nav) a {
     color: var(--grey-1000);
+  }
+  .active-nav a {
+    color: inherit;
   }
 }
 
