@@ -143,7 +143,7 @@ a {
   text-decoration: none;
 }
 
-.mw-l {
+.mw-lrg {
   max-width: 1240px;
   padding-right: 20px;
   padding-left: 20px;
@@ -161,14 +161,40 @@ a {
   padding-bottom: var(--b8x7);
 }
 
-@media (min-width: 30em) and (max-width: 700px) .p-card {
+@media (min-width: 30em) and (max-width: 700px) project-card {
   padding: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .divider {
   border-color: var(--grey-200);
   border-style: solid;
   border-width: 0.1px;
+}
+
+.orange {
+  color: var(--orange-200);
+}
+
+.purple {
+  color: var(--purple-200);
+}
+
+.blue {
+  color: var(--blue-200);
+}
+
+.pink {
+  color: var(--pink-200);
+}
+
+.red {
+  color: var(--red-200);
 }
 
 .txt-ora {
@@ -189,6 +215,17 @@ a {
   justify-content: space-between;
 }
 
+footer {
+  background-color: var(--grey-1000);
+
+  p {
+    color: var(--grey-0);
+    font-family: satoshi-bold;
+  }
+  height: 150px;
+  padding: 65px;
+}
+
 .project-card {
   display: flex;
   flex-direction: row;
@@ -205,6 +242,7 @@ a {
       flex-direction: column;
       row-gap: var(--b8x2);
       width: 50%;
+      margin: var(--b8x4);
 
       h2 {
         color: var(--pink-200);
@@ -239,12 +277,35 @@ a {
       }
     }
 
+    .project-description {
+      margin-left: var(--b8x4);
+      margin-right: var(--b8x4);
+      p {
+        color: var(--grey-600);
+      }
+    }
+
     button {
       display: inline-flex;
       flex-direction: row;
-      max-width: 300px;
+      max-width: 250px;
       justify-content: center;
+
       align-items: center;
+      margin-left: var(--b8x4);
+      color: var(--pink-200);
+      background-color: var(--grey-0);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-style: solid;
+      border-radius: 10000px;
+      border-color: var(--pink-200);
+      font-family: satoshi-bold;
+
+      img {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 
