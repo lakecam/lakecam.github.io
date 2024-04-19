@@ -202,12 +202,27 @@ a {
   font-size: 0.875rem;
 }
 
+.heavy {
+  font-family: satoshi-black;
+}
+
 .bold {
   font-family: satoshi-bold;
 }
 
 .medium {
   font-family: satoshi-medium;
+}
+
+.light {
+  font-family: satoshi-light;
+}
+
+.border-1r-subtle {
+  padding-bottom: 1rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: var(--grey-400);
 }
 
 @media (min-width: 30em) and (max-width: 700px) project-card {
@@ -551,4 +566,46 @@ section {
 
 .p-0 {
   padding: 0;
+}
+
+.hue-box {
+  background-color: var(--grey-100);
+  width: 7.5rem;
+  height: 3rem;
+  border: ;
+}
+
+.hue {
+  display: inline-flex;
+  width: 7.5px;
+  height: 100px;
+}
+
+.box {
+  max-width: 900px;
+  margin: auto;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: var(--grey-500);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
+
+.link {
+  color: var(--pink-200);
+}
+
+.link:hover {
+  background-color: var(--grey-100);
+  border-radius: 2px;
+  color: var(--purple-200);
 }
