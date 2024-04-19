@@ -103,7 +103,7 @@ p {
   --purple-200: #5c17e5;
   --purple-300: #4a0099;
 
-  --pink-100: #fce3f8;
+  --pink-100: #fcf2fa;
   --pink-200: #e517c3;
   --pink-300: #99007f;
 
@@ -152,6 +152,13 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: var(--b8x10);
+}
+
+.mw-mdm {
+  max-width: 1040px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
 }
 
 .mw-sm {
@@ -216,7 +223,7 @@ a {
 .row-nsp {
   display: flex;
   flex-direction: row;
-  column-gap: 1.5rem;
+  column-gap: 1rem;
 }
 
 .align-start {
@@ -228,6 +235,18 @@ a {
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.column-1r {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.column-3r {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
 }
 
 .divider {
@@ -460,4 +479,38 @@ nav {
 .active-nav {
   background-color: var(--grey-1000);
   color: var(--grey-0);
+}
+
+.head-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.pink-hl {
+  background-color: var(--pink-100);
+}
+
+.title-above {
+}
+
+section {
+  padding-top: var(--b8x10);
+  padding-bottom: var(--b8x10);
+}
+
+.content-block-pink {
+}
+
+.brand-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.moodboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
