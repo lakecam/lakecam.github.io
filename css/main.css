@@ -290,6 +290,25 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 601px) {
+  .job-info-job {
+    width: 26%;
+  }
+}
+
+.education-section {
+  display: flex;
+  flex-wrap: wrap;
+  h3 {
+    width: 100%;
+  }
+}
+.education-item {
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  width: 48%;
+}
 
 .resume {
   padding: 3rem;
