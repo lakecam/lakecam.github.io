@@ -484,7 +484,7 @@ a {
 .education-section {
   display: flex;
   flex-wrap: wrap;
-  h3 {
+  h4 {
     width: 100%;
   }
 }
