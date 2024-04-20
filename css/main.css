@@ -144,6 +144,10 @@ a {
   text-decoration: none;
 }
 
+.relative {
+  position: relative;
+}
+
 .mw-lrg {
   max-width: 1240px;
   padding-right: 20px;
@@ -774,20 +778,16 @@ section {
   }
 }
 
-/* .hero-annotation-design-system {
-  position: relative;
-}
-.hero-annotation-design-system:after {
-  content: "";
+.hero-annotation-originally-from {
+  @media (max-width: 1000px) {
+    display: none;
+  }
   position: absolute;
-  top: 1.7lh;
-  left: 0;
-  width: 496px;
-  height: 32px;
-  background-image: url(/img/i-also-study-interaction-design.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-} */
+  top: -1lh;
+  left: 70%;
+  display: flex;
+  align-items: start;
+}
 
 .hero-annotation-i-also-study {
   --arrow-width: 27px;
