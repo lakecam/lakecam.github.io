@@ -191,6 +191,11 @@ a {
   margin-top: 1rem;
 }
 
+.flex-p {
+  display: flex;
+  column-gap: 0.4rem;
+}
+
 .teal {
   color: teal;
 }
@@ -750,11 +755,10 @@ section {
   flex-direction: row;
   column-gap: 0.5rem;
   justify-content: right;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     border-bottom-color: var(--grey-0);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
   }
 }
 
@@ -767,5 +771,42 @@ section {
     max-width: 42%;
     margin-bottom: 2rem;
     margin-top: -1rem;
+  }
+}
+
+/* .hero-annotation-design-system {
+  position: relative;
+}
+.hero-annotation-design-system:after {
+  content: "";
+  position: absolute;
+  top: 1.7lh;
+  left: 0;
+  width: 496px;
+  height: 32px;
+  background-image: url(/img/i-also-study-interaction-design.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+} */
+
+.hero-annotation-i-also-study {
+  --arrow-width: 27px;
+  --arrow-gap: 4px;
+
+  display: flex;
+  align-items: baseline;
+  gap: var(--arrow-gap);
+  margin-top: -1rem;
+  margin-left: 10px;
+
+  .hero-annotation-arrow {
+    width: var(--arrow-width);
+  }
+  .hero-annotation-text {
+    width: 395px;
+    max-width: calc(100% - var(--arrow-width) - var(--arrow-gap));
+  }
+  @media (min-width: 1100px) {
+    margin-left: 240px;
   }
 }
