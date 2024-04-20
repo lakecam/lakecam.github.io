@@ -718,15 +718,12 @@ nav {
 }
 
 .about-container {
-  min-height: 89vh;
+  min-height: 72vh;
 }
 
 section {
   padding-top: var(--b8x10);
   padding-bottom: var(--b8x10);
-}
-
-.content-block-pink {
 }
 
 .brand-block {
