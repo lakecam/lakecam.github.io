@@ -632,6 +632,11 @@ footer {
       border-style: solid;
       border-radius: 10000px;
       border-color: var(--pink-200);
+      border-width: 1px;
+      &:hover {
+        background: var(--pink-100);
+      }
+
       font-family: satoshi-bold;
       gap: 0.5rem;
 
