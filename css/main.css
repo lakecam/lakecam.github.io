@@ -794,16 +794,19 @@ section {
   --arrow-gap: 4px;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+  justify-content: end;
   gap: var(--arrow-gap);
   margin-top: -1rem;
   margin-left: 10px;
+  width: 395px;
+  max-width: 100%;
 
   .hero-annotation-arrow {
     width: var(--arrow-width);
   }
   .hero-annotation-text {
-    width: 395px;
     max-width: calc(100% - var(--arrow-width) - var(--arrow-gap));
   }
   @media (min-width: 1100px) {
